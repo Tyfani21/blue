@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+main header nav{
+    background-color: brown;
+    color: burlywood;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    padding: 1rem;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#expl{
+    text-align: justify;
+    padding: 3rem;
+    background-color: chocolate;
+    width: 30rem;
+    top: 21%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+#bemvindo{
+    padding: 4rem;
+    background-color: crimson;
+}
+
+#antes{
+    padding: 4rem;
+    background-color: darkgreen;
+}
+#depois{
+    padding: 4rem;
+    background-color: darksalmon;
+}
+
+#mapa{
+    padding: 4rem;
+    background-color: dimgrey;
+}
