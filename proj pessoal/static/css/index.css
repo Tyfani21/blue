@@ -28,12 +28,13 @@ h1{
 
 section{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
 }
 #expl{
-    text-align: justify;
+
     padding: 3rem;
     background-color: chocolate;
     width: 30rem;
@@ -41,10 +42,15 @@ section{
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
+#expl h1{
+    text-align: center;
+}
+#expl p{
+    text-align: justify;
+}
 
 #bemvindo{
     padding: 4rem;
@@ -54,13 +60,41 @@ section{
 #antes{
     padding: 4rem;
     background-color: darkgreen;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
+#antes button#before{
+    width: 100%;
+    padding: .5rem;
+    margin: 1rem;
+}
+/* #antes:hover{
+    display: none;
+} */
 #depois{
     padding: 4rem;
     background-color: darksalmon;
+    display: none;
 }
+#depois button#after{
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+}
+/* #depois:hover{
+    display: flex; 
+}*/
 
 #mapa{
     padding: 4rem;
     background-color: dimgrey;
+}
+#mapa ul{
+    padding: auto;
+}
+#mapa ul li{
+    padding: .5rem;
 }
