@@ -1,25 +1,58 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 
-function App() {
+export default function ListaFilme(){
+  const [filme, setfilme] = useState(filmes);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Meus Filmes</h1>
+      <ul>
+        {filme.map((f) => (
+          <li key={f.id}>
+            <h3>{f.nome}</h3>
+            <img src={f.imagemUrl} alt={f.nome} />
+          </li>
+        ))}
+      </ul>
+      
+      <form type='text'>
+          <input type='text' placeholder = 'Nome' maxLength='300'></input>
+          <input type='text' placeholder = 'Url' maxLength='300'></input>
+      </form>
     </div>
   );
 }
 
-export default App;
+let filmes = [
+        {
+          id: 1,
+          nome: "Capitão América: O primeiro vingador",
+          imagemUrl:
+            "https://play-lh.googleusercontent.com/9LAzip_XWe8eVWEUGCnSJ4xf706RmYtSu5bZRAfvqbs2aW6YVlLbPF7UVTfMpJKQUioKGw",
+        },
+        {
+          id: 2,
+          nome: "Capitã Marvel",
+          imagemUrl:
+            "https://br.web.img2.acsta.net/pictures/19/02/04/18/35/1468867.jpg",
+        },
+        {
+          id: 3,
+          nome: "O incrivel Hulk",
+          imagemUrl:
+            "https://br.web.img2.acsta.net/c_310_420/pictures/210/485/21048566_20131010182211313.jpg",
+        },
+        {
+          id: 4,
+          nome: "Homem de Ferro",
+          imagemUrl:
+            "https://images-na.ssl-images-amazon.com/images/I/81vTHovrz%2BL._AC_SY606_.jpg",
+        },
+        {
+          id: 5,
+          nome: "Homem de Ferro 2",
+          imagemUrl:
+            "https://media.fstatic.com/SFp4c8GT3GTGYok7_526qDSHTns=/290x478/smart/media/movies/covers/2018/09/66432b37ed80464274a58239b695007f95c79155.jpg",
+        },
+      ]

@@ -7,7 +7,7 @@ import ExemploFuncao from './component/exemplofuncao';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ExemploFuncao />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
