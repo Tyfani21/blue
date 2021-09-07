@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color: blanchedalmond;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros passos no DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <p>Clique Aqui</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+    
+        window.document.write(`Está escrito assim: ${p1.innerText}!`)
+        p1.style.color = "blue"
+    </script>
+</body>
+</html>
