@@ -12,3 +12,9 @@ depois.addEventListener('mouseout', ()=>{
     depois.style.display = 'none'
     antes.style.display = 'flex'
 })
+
+const fechar = document.querySelector("#fechar")
+
+fechar.addEventListener("click", ()=> {
+    document.querySelector("#expl").style.display = "none"
+})
