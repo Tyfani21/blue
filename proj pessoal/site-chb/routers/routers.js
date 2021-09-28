@@ -6,6 +6,6 @@ app.get("/", (req, res) =>{
     res.send("Pagina principal")
 })
 
-app.get("/quiz", (req, res) =>{
+app.get("/quest", (req, res) =>{
     res.send("Pagina do quiz")
 })
