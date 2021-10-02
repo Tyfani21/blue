@@ -15,7 +15,7 @@
         </nav>
     </header>
     <section id='top'>
-        <div class="form">
+        <form onsubmit="submitForm(event)" class="form">
         <div class="conteiner">
             <p class="title"> Nome:</p>
             <input id="nome" class ="input-group"type="text" placeholder="Digite o nome do filme">
@@ -45,8 +45,8 @@
               </div>
             </div>
         </div>
-        <button id="btn" class="btn btn-success float-end mt-4" type="submit" onclick="postFilmes(event)">Enviar</button>
-    </div>
+        <button id="btn" class="btn btn-success" type="submit">Enviar</button>
+    </form>
     </section>
     <section id="section-list">
     <h2 id='title-list'>Lista</h2>

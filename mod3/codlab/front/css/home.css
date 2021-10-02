@@ -24,6 +24,7 @@ body{
   padding: 2rem;
   font-size: 18pt;
   position: fixed;
+  z-index: 999;
 }
 #top{
   padding-top: 8rem;
@@ -135,31 +136,77 @@ body{
 }
 
 .card{
-  padding: 4rem;
   font-size: 15pt;
   background-color: var(--C-let-c);
   border:var(--C-let-e) solid .4rem;
   border-radius: 0.5rem;
   display: flex;
-  flex-direction: column;
   padding: 1rem;
   width: 20vw;
-  height: 35vh;
+  height: 40vh;
   margin: 1rem;
   background-color: var(--R-forte);
-  justify-content: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  text-align: left;
+
 }
 .card:hover{
   transform: scale(1.1);
 }
-.card-title{
+.card-body{
+  width: 100%;
   font-size: 18pt;
   color: var(--C-let-c);
+  
 }
 #img{
-  margin: .5rem;
-  width: 50%;
-  height: 70%;
+  width: 35%;
+  height: 50%;
   border: var(--C-let-e) solid .3rem;
   border-radius: 0.5rem;
+}
+.card-header{
+  text-align: center;
+  width: 100%;
+  border-top: var(--C-let-e)solid .4rem;
+  font-size: 20pt;
+  color: var(--C-let-e);
+  padding: .5rem;
+  margin-top: .5rem;
+
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-text{
+  padding: .4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#delete{
+  width: 49%;
+  height: 30%;
+  background-color: var(--boda);
+  border: none;
+  cursor: pointer;
+}
+#delete:hover{
+  transform: scale(1.1);
+}
+#edit{
+  margin: .1rem;
+  background-color: var(--R-claro);
+  width: 49%;
+  height: 30%;
+  border: none;
+  cursor: pointer;
+}
+#edit:hover{
+  transform: scale(1.1);
 }
