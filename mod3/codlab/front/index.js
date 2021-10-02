@@ -10,13 +10,15 @@ const getFilmes = async () => {
       lista.insertAdjacentHTML('beforeend', `
       <div class="col-6">
         <div class="card">
-        ${filme.imagem}
-          <div class="card-header">
-            ${filme.nome}
+        <div>
+        <img id="img" src="${filme.imagem}"/>
+          <div class="card-header"><span class="card-title">Nome:
+          </span>${filme.nome}
           </div> 
           <div class="card-body">
-            <p class="card-text">Genero: ${filme.genero}</p>
-            <p class="card-text">Voto: ${filme.voto} estrelas</p>
+            <p class="card-text"><span class="card-title">Genero</span>: ${filme.genero}</p>
+            
+            <p class="card-text"><span class="card-title">Voto:</span> ${filme.voto} estrelas</p>
           </div>
         </div>
       </div>
@@ -25,16 +27,25 @@ const getFilmes = async () => {
   }
   getFilmes();
 
+  
+
   const postFilmes = async (evento) =>{
     evento.preventDefault();
     let nome = document.getElementById('nome').value;
     let imagem = document.getElementById('imagem').value; 
     let genero = document.getElementById('genero').value;
+    let voto = document.getElementsByName("fb");
+    for (var i = 0; i < voto.length; i++) {
+          if (voto[i].checked) {
+              voto = voto[i].value;
+          }
+      }
     
-    const filme = {
+      const filme = {
       nome,
       imagem,
-      genero
+      genero,
+      voto,
     }
    
     
@@ -48,6 +59,7 @@ const getFilmes = async () => {
     nome = '';
     imagem = '';
     genero = '';
+    voto = '';
     lista.innerHTML = '';
 
     if(result){
@@ -57,5 +69,4 @@ const getFilmes = async () => {
   }
 
   const putFilmes = () =>{
-
   }

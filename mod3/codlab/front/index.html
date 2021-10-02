@@ -14,7 +14,7 @@
             <h1>Meus filmes</h1>
         </nav>
     </header>
-    <section>
+    <section id='top'>
         <div class="form">
         <div class="conteiner">
             <p class="title"> Nome:</p>
@@ -45,11 +45,13 @@
               </div>
             </div>
         </div>
-        <button class="btn btn-success float-end mt-4" type="submit" onclick="postFilmes(event)">Enviar</button>
+        <button id="btn" class="btn btn-success float-end mt-4" type="submit" onclick="postFilmes(event)">Enviar</button>
     </div>
     </section>
-            <div id="lista"><h2>Lista</h2></div>
-    
+    <section id="section-list">
+    <h2 id='title-list'>Lista</h2>
+            <div id="lista"></div>
+        </section>
 <script src="./index.js"></script>
 </body>
 </html>
