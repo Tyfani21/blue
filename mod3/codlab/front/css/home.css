@@ -22,13 +22,20 @@ section{
   align-items: center;
   justify-content: center;
 }
-.conteiner{
+.form{
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(247, 196, 220, 0.466);
-  /* justify-content:center; */
-  align-items: center;
-  text-align:left;
+  justify-content:center;
+
   border: rgb(241, 142, 203) dashed .4rem;
   border-radius:.5rem ;
+  flex-wrap: wrap;
+
+}
+.conteiner{
+  text-align:left;
   margin: 2rem;
   padding: 2rem;
   display:flex;
@@ -46,7 +53,7 @@ section{
 .titleN{
   font-size: 15pt;
   padding: .5rem;
-  text-align: ;
+  text-align: justify;
 }
 .input-group{
   margin: .6rem;
@@ -68,3 +75,12 @@ section{
   .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #ccc;
   }
+.button{
+    font-size: 15pt;
+    padding: .5rem;
+    background-color: crimson;
+    color: whitesmoke;
+    width: 15vw;
+    border: whitesmoke dashed .1rem;
+    border-radius: 1rem;
+}
