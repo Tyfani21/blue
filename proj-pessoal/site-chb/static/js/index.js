@@ -1,4 +1,3 @@
-
 let antes = document.querySelector('#antes');
 let depois = document.querySelector('#depois');
 
