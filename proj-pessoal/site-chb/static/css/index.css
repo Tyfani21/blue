@@ -32,12 +32,10 @@ h1{
     padding: 1rem;
 }
 #barr{
-    
-    display: flex;
-}
-a{
-    text-decoration: none;
+    padding: 0rem 0.5rem;
     color: var(--V-claro);
+    display: flex;
+    text-decoration: none;
 }
 section{
     display:flex;
@@ -120,7 +118,7 @@ section{
 #placa{
     margin-bottom: 3rem;
     padding: 5rem;
-    width: 45vh;
+    width: 47vh;
     height: 10vh;
     justify-content: center;
     align-items: center;
@@ -131,12 +129,12 @@ section{
     text-shadow: -1px 0 rgb(252, 246, 246), 0 1px black,
     1px 0 black, 0 -1px black;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem 2rem 1rem 2rem;
     font-size: 25pt;
     background:url("../img/texture-background.jpg");
     background-size: 60rem;
     background-position: center;
-    width: 48vh;
+    width: 50vh;
     height: 15vh;
 }
 #antes{
@@ -163,8 +161,10 @@ section{
     margin: 1rem;
     cursor: pointer;
     background-color: var(--V-escuro);
-    color: whitesmoke;
-    text-decoration: none;
+    border-radius: .5rem;
+    color: #fff;    
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
 }
 
 #depois{
@@ -188,12 +188,22 @@ section{
     margin: 1rem;
     cursor: pointer;
     background-color: var(--V-escuro);
-    color: whitesmoke;
-    text-decoration: none;
+    border-radius: .5rem;
 }
 
 a{
     cursor: pointer;
+}
+#but{
+    font-size: 15pt;
+    text-decoration: none;
+    color: #fff;    
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    
+}
+#after:hover{
+    transform: scale(1.01);
 }
 #mapa{
     padding: 4rem;
@@ -214,11 +224,14 @@ a{
 }
 
 #mapa #title{
-    padding: 1rem;
+    padding: 2rem;
     margin:1rem;
     text-shadow: -1px 0 rgb(252, 246, 246), 0 1px black,
     1px 0 black, 0 -1px black;
-    background-color: var(--L-forte);
+    border-radius: .3rem;
+    background:url("../img/texture-background.jpg");
+    background-size: 60rem;
+    background-position: center;
     text-align: center;
 }
 #mapa ul li{ 
@@ -233,4 +246,26 @@ a{
     text-align: center;
     text-shadow: -1px 0 rgb(252, 246, 246), 0 1px black,
     1px 0 black, 0 -1px black;
+}
+#mapa ul li:hover{
+    transform:scale(1.2);
+}
+footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--V-escuro);
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;  
+}
+#rs{
+    font-size: 4rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fff;    
+    text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;  
 }
