@@ -1,0 +1,47 @@
+@import './../../components/colors/color.css';
+
+#expl{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+#expl div{
+    display:none;
+    position: fixed;
+    background-color: #a52a2a;
+    top: 25%;
+    left: 35%;
+    width: 30%;
+    height: 30%;
+    z-index: 999;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 15pt;
+    
+}
+#expl div button{
+    background-color: var(--L-suave);
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    top: 5px;
+    right: 5px;
+    border-radius: 30%;
+}
+#expl h2{
+    text-align: center;
+    color: var(--L-suave);
+    margin: .9rem;
+}
+#expl p{
+    text-align: justify;
+    color: var(--L-suave);
+}

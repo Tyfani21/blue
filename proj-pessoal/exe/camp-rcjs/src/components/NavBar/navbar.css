@@ -1,0 +1,27 @@
+@import './../colors/color.css';
+*{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--barr);
+    color: var(--L-suave);
+    width: 100vw;
+    height: 13vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    font-size: 17pt;
+}
+h1{
+    padding: .5rem;
+}
+#barr{
+    padding: 0rem 0.5rem;
+    color: var(--V-claro);
+    display: flex;
+    text-decoration: none;
+}
